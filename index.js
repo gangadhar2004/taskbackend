@@ -15,9 +15,12 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
+
+
+
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", "http://localhost:3001","taskfront-one.vercel.app","taskfront-gamgadhars-projects.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
