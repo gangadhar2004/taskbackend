@@ -20,7 +20,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001","taskfront-one.vercel.app","taskfront-gamgadhars-projects.vercel.app"],
+    origin: ["http://localhost:3000", "http://localhost:3001","https://taskfront-one.vercel.app","https://taskfront-gamgadhars-projects.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
